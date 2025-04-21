@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Big Data Architecture</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="architecture">
+      <!-- Data Source Section -->
+      <div id="data-source" class="section visible">
+        <h2>Data Sources</h2>
+        <div class="icons">
+          <img src="icons/db.png" alt="Database" />
+          <img src="icons/excel.png" alt="Excel" />
+          <img src="icons/api.png" alt="API" />
+          <img src="icons/twitter.png" alt="Twitter" />
+          <img src="icons/iot.png" alt="IoT" />
+        </div>
+        <button id="to-ingestion">Send Data</button>
+      </div>
+
+      <!-- Data Ingestion Section -->
+      <div id="data-ingestion" class="section hidden">
+        <h2>Data Ingestion</h2>
+        <div class="types">
+          <p>Batch/Scheduled</p>
+          <p>Real Time / Stream / In-Memory</p>
+        </div>
+        <button id="to-storage">Ingest Data</button>
+      </div>
+
+      <!-- Data Storage Section -->
+      <div id="data-storage" class="section hidden">
+        <h2>Data Storage</h2>
+        <div class="icons">
+          <img src="icons/rdbms.png" alt="RDBMS" />
+          <img src="icons/nosql.png" alt="NoSQL" />
+          <img src="icons/hdfs.png" alt="HDFS" />
+        </div>
+        <button id="to-analytics">Store Data</button>
+      </div>
+
+      <!-- Analytics Section -->
+      <div id="analytics" class="section hidden">
+        <h2>Analytics / Servicing</h2>
+        <div class="services">
+          <p>Statistical</p>
+          <p>Machine Learning</p>
+          <p>Recommendation</p>
+          <p>Predictive</p>
+          <p>Knowledge Graph</p>
+          <p>Pre-computed Views</p>
+        </div>
+        <button id="to-consumption">Analyze Data</button>
+      </div>
+
+      <!-- Data Consumption Section -->
+      <div id="data-consumption" class="section hidden">
+        <h2>Data Consumption</h2>
+        <div class="uses">
+          <p>Dashboards</p>
+          <p>Reports</p>
+          <p>Insights</p>
+          <p>Real-Time Alerts</p>
+          <p>Search / Query</p>
+          <p>Enterprise Data Warehouse</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
